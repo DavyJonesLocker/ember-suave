@@ -35,5 +35,6 @@
     "return",
     "typeof"
   ],
+  "requireSpaceAfterLineComment": true,
   "validateIndentation": 2
 }
