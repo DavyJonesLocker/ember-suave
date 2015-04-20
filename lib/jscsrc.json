@@ -21,5 +21,19 @@
   "requireLineBreakAfterVariableAssignment": true,
   "requireSemicolons": true,
   "requireSpaceAfterBinaryOperators": true,
+  "requireSpaceAfterKeywords": [
+    "do",
+    "for",
+    "if",
+    "else",
+    "switch",
+    "case",
+    "try",
+    "void",
+    "while",
+    "with",
+    "return",
+    "typeof"
+  ],
   "validateIndentation": 2
 }
