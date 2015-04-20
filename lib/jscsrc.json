@@ -4,5 +4,6 @@
   "disallowSpacesBeforeSemicolons": true,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
+  "requireCapitalizedConstructors": true,
   "validateIndentation": 2
 }
