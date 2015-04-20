@@ -6,8 +6,6 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "ember server",
-    "build": "ember build",
     "test": "mocha tests/*-test.js --reporter spec"
   },
   "repository": {
@@ -17,7 +15,10 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "Estelle DeBlois <edeblois@gmail.com>",
+  "author": [
+    "Estelle DeBlois <edeblois@gmail.com>",
+    "Robert Jackson <me@rwjblue.com>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "broccoli": "^0.16.2",

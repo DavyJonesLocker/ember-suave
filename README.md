@@ -1,25 +1,16 @@
-# Ember-suave
+# Ember Suave
 
-This README outlines the details of collaborating on this Ember addon.
+Ensures super stylish code by enforcing the DockYard JavaScript and
+Ember style guide rules.
+
+* [JavaScript Style Guide](https://github.com/dockyard/styleguides/blob/master/javascript.md)
+* [Ember Style Guide](https://github.com/dockyard/styleguides/blob/master/ember.md)
 
 ## Installation
 
 * `git clone` this repository
 * `npm install`
-* `bower install`
-
-## Running
-
-* `ember server`
-* Visit your app at http://localhost:4200.
 
 ## Running Tests
 
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+* `npm test`
