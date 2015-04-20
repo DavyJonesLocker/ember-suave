@@ -45,7 +45,7 @@
   ],
   "requireSpaceBeforeObjectValues": true,
   "requireSpaceBetweenArguments": true,
-  "requireSpacesInAnonymousFunctionExpression": {
+  "requireSpacesInFunction": {
     "beforeOpeningCurlyBrace": true
   },
   "requireSpacesInConditionalExpression": true,
