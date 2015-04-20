@@ -54,5 +54,6 @@
   "disallowMultipleLineBreaks": true,
   "disallowMultipleVarDecl": "exceptUndefined",
   "disallowNewlineBeforeBlockStatements": true,
+  "disallowOperatorBeforeLineBreak": ["+", "."],
   "validateIndentation": 2
 }
