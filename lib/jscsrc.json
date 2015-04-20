@@ -19,5 +19,6 @@
   ],
   "requireDotNotation": true,
   "requireLineBreakAfterVariableAssignment": true,
+  "requireSemicolons": true,
   "validateIndentation": 2
 }
