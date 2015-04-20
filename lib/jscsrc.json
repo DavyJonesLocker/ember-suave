@@ -20,5 +20,6 @@
   "requireDotNotation": true,
   "requireLineBreakAfterVariableAssignment": true,
   "requireSemicolons": true,
+  "requireSpaceAfterBinaryOperators": true,
   "validateIndentation": 2
 }
