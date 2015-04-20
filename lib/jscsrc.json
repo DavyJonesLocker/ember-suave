@@ -16,5 +16,6 @@
     "catch",
     "switch"
   ],
+  "requireDotNotation": true,
   "validateIndentation": 2
 }
