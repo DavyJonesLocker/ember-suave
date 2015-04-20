@@ -1,7 +1,7 @@
 {
   "name": "ember-suave",
   "version": "0.1.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Make your Ember App Stylish",
   "directories": {
     "test": "tests"
   },

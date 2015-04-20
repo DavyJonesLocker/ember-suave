@@ -1,5 +1,7 @@
 # Ember Suave
 
+[![Build Status](https://travis-ci.org/dockyard/ember-suave.svg?branch=master)](https://travis-ci.org/dockyard/ember-suave)
+
 Ensures super stylish code by enforcing the DockYard JavaScript and
 Ember style guide rules.
 
