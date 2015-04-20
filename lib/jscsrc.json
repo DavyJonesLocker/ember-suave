@@ -61,6 +61,7 @@
   "disallowSpacesInFunction": {
     "beforeOpeningRoundBrace": true
   },
+  "disallowSpacesInsideParentheses": true,
   "disallowSpacesInCallExpression": true,
   "validateIndentation": 2
 }
