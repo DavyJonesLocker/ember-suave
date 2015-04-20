@@ -2,5 +2,6 @@
   "esnext": true,
   "disallowEmptyBlocks": true,
   "disallowSpacesBeforeSemicolons": true,
+  "requireBlocksOnNewline": true,
   "validateIndentation": 2
 }
