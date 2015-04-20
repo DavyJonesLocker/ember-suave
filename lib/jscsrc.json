@@ -64,5 +64,6 @@
   "disallowSpacesInsideParentheses": true,
   "disallowSpacesInCallExpression": true,
   "disallowTrailingComma": true,
+  "disallowTrailingWhitespace": true,
   "validateIndentation": 2
 }
