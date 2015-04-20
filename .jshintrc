@@ -2,9 +2,15 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
+    "describe",
+    "it",
+    "beforeEach",
+    "afterEach",
+    "after",
+    "before"
   ],
-  "browser": true,
+  "browser": false,
   "boss": true,
   "curly": true,
   "debug": false,
@@ -16,6 +22,7 @@
   "laxbreak": false,
   "newcap": true,
   "noarg": true,
+  "node": true,
   "noempty": false,
   "nonew": false,
   "nomen": false,
