@@ -48,5 +48,6 @@
   "requireSpacesInAnonymousFunctionExpression": {
     "beforeOpeningCurlyBrace": true
   },
+  "requireSpacesInConditionalExpression": true,
   "validateIndentation": 2
 }
