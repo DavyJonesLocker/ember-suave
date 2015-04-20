@@ -3,5 +3,6 @@
   "disallowEmptyBlocks": true,
   "disallowSpacesBeforeSemicolons": true,
   "requireBlocksOnNewline": true,
+  "requireCamelCaseOrUpperCaseIdentifiers": true,
   "validateIndentation": 2
 }
