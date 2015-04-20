@@ -1,1 +1,1 @@
-var foo = "blah blah";  
+var foo = 'blah blah';  

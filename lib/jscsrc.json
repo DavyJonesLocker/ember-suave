@@ -66,5 +66,9 @@
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
   "validateIndentation": 2,
-  "validateParameterSeparator": ", "
+  "validateParameterSeparator": ", ",
+  "validateQuoteMarks": {
+    "mark": "'",
+    "escape": true
+  }
 }
