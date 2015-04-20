@@ -1,7 +1,6 @@
 {
   "esnext": true,
   "disallowEmptyBlocks": true,
-  "disallowMultipleVarDeclWithAssignment": true,
   "disallowSpacesBeforeSemicolons": true,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
@@ -53,5 +52,6 @@
   "requireSpacesInsideObjectBrackets": "all",
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleLineBreaks": true,
+  "disallowMultipleVarDecl": "exceptUndefined",
   "validateIndentation": 2
 }
