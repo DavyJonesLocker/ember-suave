@@ -18,5 +18,6 @@
     "switch"
   ],
   "requireDotNotation": true,
+  "requireLineBreakAfterVariableAssignment": true,
   "validateIndentation": 2
 }
