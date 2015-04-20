@@ -43,5 +43,6 @@
     "while",
     "catch"
   ],
+  "requireSpaceBeforeObjectValues": true,
   "validateIndentation": 2
 }
