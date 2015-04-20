@@ -49,5 +49,6 @@
     "beforeOpeningCurlyBrace": true
   },
   "requireSpacesInConditionalExpression": true,
+  "requireSpacesInForStatement": true,
   "validateIndentation": 2
 }
