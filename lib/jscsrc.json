@@ -58,6 +58,9 @@
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowSpaceBeforePostfixUnaryOperators": true,
+  "disallowSpacesInFunction": {
+    "beforeOpeningRoundBrace": true
+  },
   "disallowSpacesInCallExpression": true,
   "validateIndentation": 2
 }
