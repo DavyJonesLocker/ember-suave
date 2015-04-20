@@ -63,5 +63,6 @@
   },
   "disallowSpacesInsideParentheses": true,
   "disallowSpacesInCallExpression": true,
+  "disallowTrailingComma": true,
   "validateIndentation": 2
 }
