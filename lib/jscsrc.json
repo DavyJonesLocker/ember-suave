@@ -57,5 +57,6 @@
   "disallowOperatorBeforeLineBreak": ["+", "."],
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceAfterPrefixUnaryOperators": true,
+  "disallowSpaceBeforePostfixUnaryOperators": true,
   "validateIndentation": 2
 }
