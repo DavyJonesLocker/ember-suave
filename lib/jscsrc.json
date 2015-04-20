@@ -36,5 +36,6 @@
     "typeof"
   ],
   "requireSpaceAfterLineComment": true,
+  "requireSpaceBeforeBinaryOperators": true,
   "validateIndentation": 2
 }
