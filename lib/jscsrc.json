@@ -44,5 +44,6 @@
     "catch"
   ],
   "requireSpaceBeforeObjectValues": true,
+  "requireSpaceBetweenArguments": true,
   "validateIndentation": 2
 }
