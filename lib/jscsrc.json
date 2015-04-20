@@ -52,5 +52,6 @@
   "requireSpacesInForStatement": true,
   "requireSpacesInsideObjectBrackets": "all",
   "disallowKeywordsOnNewLine": ["else"],
+  "disallowMultipleLineBreaks": true,
   "validateIndentation": 2
 }
