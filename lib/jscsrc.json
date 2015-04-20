@@ -50,5 +50,6 @@
   },
   "requireSpacesInConditionalExpression": true,
   "requireSpacesInForStatement": true,
+  "requireSpacesInsideObjectBrackets": "all",
   "validateIndentation": 2
 }
