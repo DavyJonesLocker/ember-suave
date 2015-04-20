@@ -1,6 +1,7 @@
 {
   "esnext": true,
   "disallowEmptyBlocks": true,
+  "disallowMultipleVarDeclWithAssignment": true,
   "disallowSpacesBeforeSemicolons": true,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
