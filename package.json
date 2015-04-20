@@ -9,7 +9,7 @@
   "scripts": {
     "start": "ember server",
     "build": "ember build",
-    "test": "mocha node_tests/*-test.js --reporter spec"
+    "test": "mocha tests/*-test.js --reporter spec"
   },
   "repository": "",
   "engines": {
@@ -45,7 +45,8 @@
   ],
   "dependencies": {
     "broccoli-jscs": "0.0.22",
-    "ember-cli-babel": "^5.0.0"
+    "ember-cli-babel": "^5.0.0",
+    "temp": "^0.8.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
