@@ -1,3 +1,3 @@
-for (var i = 0;i < l; i++) {
+for (let i = 0;i < l; i++) {
   x++;
 }

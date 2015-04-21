@@ -1,4 +1,4 @@
-for (var e in elements)
+for (let e in elements)
 {
   bar(e);
 }

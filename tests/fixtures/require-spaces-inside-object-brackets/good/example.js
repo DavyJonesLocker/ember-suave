@@ -1,2 +1,2 @@
-var x = { a: { b: 1 } };
-var y = { a: 1 };
+let x = { a: { b: 1 } };
+let y = { a: 1 };

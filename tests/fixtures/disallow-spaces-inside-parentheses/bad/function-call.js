@@ -1,1 +1,1 @@
-var y = foo( {} );
+let y = foo( {} );

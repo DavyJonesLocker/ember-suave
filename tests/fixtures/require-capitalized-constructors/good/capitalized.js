@@ -1,2 +1,2 @@
-var a = new B();
-var c = new this();
+let a = new B();
+let c = new this();

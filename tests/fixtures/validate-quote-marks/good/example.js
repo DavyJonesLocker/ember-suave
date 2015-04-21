@@ -1,2 +1,2 @@
-var x = 'x';
-var y = "Boomer's toy";
+let x = 'x';
+let y = "Boomer's toy";

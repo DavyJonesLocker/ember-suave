@@ -1,3 +1,3 @@
-var lower_case = 1;
-var Mixed_case = 2;
-var mixed_Case = 3;
+let lower_case = 1;
+let Mixed_case = 2;
+let mixed_Case = 3;

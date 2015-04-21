@@ -1,1 +1,1 @@
-var d = new e();
+let d = new e();
