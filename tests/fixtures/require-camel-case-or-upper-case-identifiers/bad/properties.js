@@ -1,2 +1,2 @@
-var obj.snake_case = 5;
-var camelCase = { snake_case: 6 };
+let obj.snake_case = 5;
+let camelCase = { snake_case: 6 };

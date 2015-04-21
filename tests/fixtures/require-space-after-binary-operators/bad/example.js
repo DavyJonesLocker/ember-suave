@@ -1,1 +1,1 @@
-var z = x +y;
+let z = x +y;

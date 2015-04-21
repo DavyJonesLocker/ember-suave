@@ -2,7 +2,7 @@ do {
   console.log('foo');
 } while (true);
 
-for (var i = 0; i < length; i++) {
+for (let i = 0; i < length; i++) {
   console.log('foo');
 }
 

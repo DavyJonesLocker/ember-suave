@@ -17,7 +17,6 @@
     "switch"
   ],
   "requireDotNotation": true,
-  "requireLineBreakAfterVariableAssignment": true,
   "requireSemicolons": true,
   "requireSpaceAfterBinaryOperators": true,
   "requireSpaceAfterKeywords": [
@@ -70,5 +69,6 @@
   "validateQuoteMarks": {
     "mark": "'",
     "escape": true
-  }
+  },
+  "disallowVar": true
 }

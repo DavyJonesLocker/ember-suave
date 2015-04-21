@@ -1,10 +1,10 @@
-var x = {
+let x = {
   foo: function () {
     console.log('foo');
   }
 };
 
-var x = function a () {
+let x = function a () {
   console.log('foo');
 };
 

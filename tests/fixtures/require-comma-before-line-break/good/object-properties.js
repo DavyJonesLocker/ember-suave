@@ -1,5 +1,5 @@
-var x = {
+let x = {
   one: 1,
   two: 2
 };
-var y = { three: 3, four: 4 };
+let y = { three: 3, four: 4 };

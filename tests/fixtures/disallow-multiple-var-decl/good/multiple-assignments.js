@@ -1,2 +1,2 @@
-var abc = 8;
-var foo = 5;
+let abc = 8;
+let foo = 5;
