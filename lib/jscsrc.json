@@ -53,7 +53,7 @@
   "disallowMultipleLineBreaks": true,
   "disallowMultipleVarDecl": "exceptUndefined",
   "disallowNewlineBeforeBlockStatements": true,
-  "disallowOperatorBeforeLineBreak": ["+", "."],
+  "disallowOperatorBeforeLineBreak": ["."],
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowSpaceBeforePostfixUnaryOperators": true,
@@ -70,5 +70,6 @@
     "mark": "'",
     "escape": true
   },
-  "disallowVar": true
+  "disallowVar": true,
+  "requireTemplateStringsForConcatenation": true
 }
