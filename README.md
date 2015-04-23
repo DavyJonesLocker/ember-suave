@@ -5,6 +5,8 @@
 Ensures super stylish code by enforcing the DockYard JavaScript and
 Ember style guide rules.
 
+![suave](http://i.imgur.com/zM1X686.gif)
+
 * [JavaScript Style Guide](https://github.com/dockyard/styleguides/blob/master/javascript.md)
 * [Ember Style Guide](https://github.com/dockyard/styleguides/blob/master/ember.md)
 
