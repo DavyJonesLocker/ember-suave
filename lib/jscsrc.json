@@ -1,7 +1,24 @@
 {
   "esnext": true,
+
   "disallowEmptyBlocks": true,
   "disallowSpacesBeforeSemicolons": true,
+  "disallowKeywordsOnNewLine": ["else"],
+  "disallowMultipleLineBreaks": true,
+  "disallowMultipleVarDecl": "exceptUndefined",
+  "disallowNewlineBeforeBlockStatements": true,
+  "disallowOperatorBeforeLineBreak": ["."],
+  "disallowSpaceAfterObjectKeys": true,
+  "disallowSpaceAfterPrefixUnaryOperators": true,
+  "disallowSpaceBeforePostfixUnaryOperators": true,
+  "disallowSpacesInFunction": {
+    "beforeOpeningRoundBrace": true
+  },
+  "disallowSpacesInsideParentheses": true,
+  "disallowSpacesInCallExpression": true,
+  "disallowTrailingComma": true,
+  "disallowTrailingWhitespace": true,
+  "disallowVar": true,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
   "requireCapitalizedConstructors": true,
@@ -49,26 +66,11 @@
   "requireSpacesInConditionalExpression": true,
   "requireSpacesInForStatement": true,
   "requireSpacesInsideObjectBrackets": "all",
-  "disallowKeywordsOnNewLine": ["else"],
-  "disallowMultipleLineBreaks": true,
-  "disallowMultipleVarDecl": "exceptUndefined",
-  "disallowNewlineBeforeBlockStatements": true,
-  "disallowOperatorBeforeLineBreak": ["+", "."],
-  "disallowSpaceAfterObjectKeys": true,
-  "disallowSpaceAfterPrefixUnaryOperators": true,
-  "disallowSpaceBeforePostfixUnaryOperators": true,
-  "disallowSpacesInFunction": {
-    "beforeOpeningRoundBrace": true
-  },
-  "disallowSpacesInsideParentheses": true,
-  "disallowSpacesInCallExpression": true,
-  "disallowTrailingComma": true,
-  "disallowTrailingWhitespace": true,
+  "requireTemplateStringsForConcatenation": true,
   "validateIndentation": 2,
   "validateParameterSeparator": ", ",
   "validateQuoteMarks": {
     "mark": "'",
     "escape": true
-  },
-  "disallowVar": true
+  }
 }
