@@ -1,0 +1,3 @@
+let myObject = {
+  someMethod: function() {}
+};
