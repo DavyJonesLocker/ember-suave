@@ -1,5 +1,5 @@
 let Foo = {
-  foo: function(){
+  foo(){
     console.log('foo');
   }
 };
