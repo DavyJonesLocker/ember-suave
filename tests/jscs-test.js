@@ -1,14 +1,39 @@
 'use strict';
 
-var path = require('path');
 var walkSync = require('walk-sync');
+var execFile = require("child_process").execFile;
 
-var nodeTestFiles = walkSync(__dirname)
+var nodeTestFiles = walkSync('.')
   .filter(function(file) {
-    return /-test.js$/.test(file);
+    return /.js$/.test(file);
   })
-  .map(function(file) {
-    return path.join(__dirname, file);
+  .filter(function(file) {
+    return !/node_modules|tmp/.test(file);
+  })
+  .filter(function(file) {
+    return !/tests\/fixtures\//.test(file);
   });
 
-require('mocha-jscs')(['./index.js'].concat(nodeTestFiles));
+describe('jscs', function () {
+  nodeTestFiles.forEach(function(path) {
+
+    it("should pass for " + path, function (done) {
+      var error = new Error('');
+
+      execFile(
+        require.resolve('jscs/bin/jscs'),
+        [path, '--verbose', '--config', '.repo-jscsrc'],
+        onProcessFinished
+      );
+
+      function onProcessFinished (_, stdout) {
+        if (_) {
+          error.stack = stdout;
+          throw error;
+        } else {
+          done();
+        }
+      }
+    });
+  });
+});
