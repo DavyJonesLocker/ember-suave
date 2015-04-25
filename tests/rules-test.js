@@ -45,10 +45,12 @@ describe('rules tests', function() {
       it('bad files should fail', function() {
         var rulePath = path.join(fixturePath, dir, 'bad');
 
-        return checkJSCSRules(this.lintTree('test', rulePath), function(contents) {
-          expect(contents).to.not.include('ok(true');
-          expect(contents).to.include('ok(false');
-        });
+        if (fs.existsSync(rulePath)) {
+          return checkJSCSRules(this.lintTree('test', rulePath), function(contents) {
+            expect(contents).to.not.include('ok(true');
+            expect(contents).to.include('ok(false');
+          });
+        }
       });
     });
   });

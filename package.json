@@ -50,6 +50,7 @@
   "dependencies": {
     "broccoli-jscs": "0.0.22",
     "ember-cli-babel": "^5.0.0",
+    "esprima": "^2.2.0",
     "temp": "^0.8.1"
   },
   "ember-addon": {
