@@ -40,7 +40,6 @@
     "ember-try": "0.0.4",
     "jscs": "^1.12.0",
     "mocha": "^2.2.4",
-    "mocha-jscs": "^1.0.2",
     "mocha-jshint": "^2.1.1",
     "walk-sync": "^0.1.3"
   },
