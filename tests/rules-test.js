@@ -29,12 +29,12 @@ describe('rules tests', function() {
     }
   });
 
-  var rules = fs.readdirSync(fixturePath);
+  var rules = fs.readdirSync(path.join(fixturePath, 'rules'));
 
   rules.forEach(function(dir) {
     describe(dir, function() {
       it('good files should pass', function() {
-        var rulePath = path.join(fixturePath, dir, 'good');
+        var rulePath = path.join(fixturePath, 'rules', dir, 'good');
 
         return checkJSCSRules(this.lintTree('test', rulePath), function(contents) {
           expect(contents).to.include('ok(true');
@@ -43,11 +43,26 @@ describe('rules tests', function() {
       });
 
       it('bad files should fail', function() {
-        var rulePath = path.join(fixturePath, dir, 'bad');
+        var rulePath = path.join(fixturePath, 'rules', dir, 'bad');
 
         return checkJSCSRules(this.lintTree('test', rulePath), function(contents) {
           expect(contents).to.not.include('ok(true');
           expect(contents).to.include('ok(false');
+        });
+      });
+    });
+  });
+
+  describe('regressions', function() {
+    var regressionDirs = fs.readdirSync(path.join(fixturePath, 'regressions'));
+
+    regressionDirs.forEach(function(dir) {
+      it(dir + ' should pass', function() {
+        var rulePath = path.join(fixturePath, 'regressions', dir);
+
+        return checkJSCSRules(this.lintTree('test', rulePath), function(contents) {
+          expect(contents).to.not.include('ok(false');
+          expect(contents).to.include('ok(true');
         });
       });
     });
