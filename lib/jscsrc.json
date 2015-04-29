@@ -35,6 +35,9 @@
   ],
   "requireDotNotation": true,
   "requireEnhancedObjectLiterals": true,
+  "requireObjectDestructuring": {
+    "allExcept": ["get", "set"]
+  },
   "requireSemicolons": true,
   "requireSpaceAfterBinaryOperators": true,
   "requireSpaceAfterKeywords": [
