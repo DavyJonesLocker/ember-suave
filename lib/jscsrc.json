@@ -19,6 +19,7 @@
   "disallowTrailingComma": true,
   "disallowTrailingWhitespace": true,
   "disallowVar": true,
+  "requireArrayDestructuring": true,
   "requireBlocksOnNewline": true,
   "requireCamelCaseOrUpperCaseIdentifiers": true,
   "requireCapitalizedConstructors": true,
