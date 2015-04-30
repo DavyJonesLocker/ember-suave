@@ -35,6 +35,7 @@
   ],
   "requireDotNotation": true,
   "requireEnhancedObjectLiterals": true,
+  "requireLineBreakAfterVariableAssignment": true,
   "requireObjectDestructuring": {
     "allExcept": ["get", "set"]
   },
