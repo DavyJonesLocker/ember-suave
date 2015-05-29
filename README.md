@@ -59,7 +59,7 @@ This library follows [Semantic Versioning](http://semver.org).
 
 ## Legal
 
-[DockYard](http://dockyard.com), Inc &copy; 2015
+[DockYard](http://dockyard.com/ember-consulting), Inc &copy; 2015
 
 [@dockyard](http://twitter.com/dockyard)
 
