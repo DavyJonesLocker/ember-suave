@@ -24,6 +24,7 @@
   "requireCamelCaseOrUpperCaseIdentifiers": true,
   "requireCapitalizedConstructors": true,
   "requireCommaBeforeLineBreak": true,
+  "requireCommentsToIncludeAccess": true,
   "requireCurlyBraces": [
     "if",
     "else",
