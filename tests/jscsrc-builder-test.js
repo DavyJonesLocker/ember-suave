@@ -53,10 +53,12 @@ describe('jscsrc-builder', function() {
       additionalRules: ['foo-bar']
     });
 
-    var configPath = jscsrcBuilder();
+    var project = { root: '/fake/project/root' };
+    var configPath = jscsrcBuilder(project);
     var config = readConfig(configPath);
 
-    expect(config.additionalRules).to.include('foo-bar');
+    var expectedRulePath = path.join(project.root, 'foo-bar');
+    expect(config.additionalRules).to.include(expectedRulePath);
   });
 
   it('uses a users esprima if present', function() {
