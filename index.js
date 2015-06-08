@@ -9,7 +9,7 @@ module.exports = {
 
   lintTree: function(type, tree) {
     var jscsOptions = this.app.options.jscsOptions || {};
-    jscsOptions.configPath = jscsrcBuilder();
+    jscsOptions.configPath = jscsrcBuilder(this.project);
 
     return new JSCSFilter(tree, jscsOptions);
   }
