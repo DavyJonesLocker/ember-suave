@@ -13,3 +13,7 @@ export function somePrivateThing() {}
  @public
  */
 export function somePublicThing() {}
+
+/*
+ Some non documentation block, nothing to see here.
+*/
