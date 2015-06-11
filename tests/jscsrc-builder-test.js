@@ -61,6 +61,29 @@ describe('jscsrc-builder', function() {
     expect(config.additionalRules).to.include(expectedRulePath);
   });
 
+  it('default `additionalRules` only has ember-suave custom rules', function() {
+    var project = { root: '/fake/project/root' };
+    var configPath = jscsrcBuilder(project);
+    var config = readConfig(configPath);
+
+    expect(config.additionalRules.length).to.equal(1);
+
+    var regex = /\/ember-suave\/lib\/rules\/\*\.js$/;
+    expect(config.additionalRules[0]).to.match(regex);
+  });
+
+  it('ember-suave custom rules wont be added twice to `additionalRules` ', function() {
+    testCustomConfig({
+      additionalRules: ['./node_modules/ember-suave/lib/rules/*.js']
+    });
+
+    var project = { root: '/fake/project/root' };
+    var configPath = jscsrcBuilder(project);
+    var config = readConfig(configPath);
+
+    expect(config.additionalRules.length).to.equal(1);
+  });
+
   it('uses a users esprima if present', function() {
     testCustomConfig({
       esprima: 'foo-bar'
