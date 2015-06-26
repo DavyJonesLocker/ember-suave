@@ -28,6 +28,13 @@ export function somePublicThing() {}
  */
 export function someAnotherPublicThing() {}
 
+/**
+ * This thing is public and documented in JSDoc style, with multiple spaces before the annotation.
+ *
+ *    @public
+ */
+export function doNothingPublicMethod() {}
+
 /*
  Some non documentation block, nothing to see here.
 */
