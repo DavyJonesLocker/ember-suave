@@ -1,6 +1,6 @@
 {
   "name": "ember-suave",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "Make your Ember App Stylish",
   "directories": {
     "test": "tests"
