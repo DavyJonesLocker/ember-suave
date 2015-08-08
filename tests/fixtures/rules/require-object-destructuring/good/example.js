@@ -3,7 +3,7 @@ let { bar } = SomeThing.Baz;
 
 let someVariableName = SomeThing.propertyWithDifferentName;
 
-const get = SomeThing.get;
-const set = SomeThing.set;
+const { get } = SomeThing;
+const { set } = SomeThing;
 
 const { val } = SomeThing['some.key'];
