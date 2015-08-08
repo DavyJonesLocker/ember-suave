@@ -3,7 +3,6 @@
   "verbose": true,
 
   "disallowEmptyBlocks": true,
-  "disallowSpacesBeforeSemicolons": true,
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleLineBreaks": true,
   "disallowMultipleVarDecl": "exceptUndefined",
@@ -12,6 +11,7 @@
   "disallowSpaceAfterObjectKeys": true,
   "disallowSpaceAfterPrefixUnaryOperators": true,
   "disallowSpaceBeforePostfixUnaryOperators": true,
+  "disallowSpaceBeforeSemicolon": true,
   "disallowSpacesInFunction": {
     "beforeOpeningRoundBrace": true
   },
