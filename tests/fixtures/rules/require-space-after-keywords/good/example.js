@@ -25,6 +25,8 @@ try {
   console.log(error);
 }
 
-return { a: 'abc' };
+function foo() {
+  return { a: 'abc' };
+}
 
 console.log(typeof ['a', 'b'] === 'object');
