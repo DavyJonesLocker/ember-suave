@@ -40,6 +40,7 @@
   "requireEnhancedObjectLiterals": true,
   "requireLineBreakAfterVariableAssignment": true,
   "requireObjectDestructuring": true,
+  "requireParenthesesAroundArrowParam": true,
   "requireSemicolons": true,
   "requireSpaceAfterBinaryOperators": true,
   "requireSpaceAfterKeywords": [
