@@ -29,6 +29,21 @@ export function somePublicThing() {}
 export function someAnotherPublicThing() {}
 
 /**
+
+ This thing is protected.
+
+ @protected
+ */
+export function someProtectedThing() {}
+
+/**
+ * This thing is protected and documented in JSDoc style.
+ *
+ * @protected
+ */
+export function someAnotherProtectedThing() {}
+
+/**
  * This thing is public and documented in JSDoc style, with multiple spaces before the annotation.
  *
  *    @public
