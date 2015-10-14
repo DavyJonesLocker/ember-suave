@@ -2,6 +2,10 @@
   "esnext": true,
   "verbose": true,
 
+  "additionalRules": [
+    "./rules/*.js"
+  ],
+
   "disallowEmptyBlocks": true,
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleLineBreaks": true,

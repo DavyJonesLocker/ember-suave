@@ -10,10 +10,26 @@ Ember style guide rules.
 * [JavaScript Style Guide](https://github.com/dockyard/styleguides/blob/master/javascript.md)
 * [Ember Style Guide](https://github.com/dockyard/styleguides/blob/master/ember.md)
 
+## Installation
+
+```bash
+ember install ember-suave
+```
+
 ## Usage
 
-* ember-cli >= 0.2.3 `ember install ember-suave`
-* ember-cli < 0.2.3 `ember install:addon ember-suave`
+`ember-suave` is used as a JSCS preset, and can be enabled by adding a `preset` to your `.jscsrc` file.
+
+```
+{
+  "preset": "ember-suave"
+}
+```
+
+`ember-suave` integrates well with ember-cli, but can also be used as a standalone JSCS preset. This allows custom
+editor integration, and non-ember-cli projects to utilize our curated set of rules.
+
+When used from within ember-cli, your test suite will automatically fail if any of the rules are broken.
 
 ## JSCS Rules
 
@@ -25,19 +41,21 @@ so that all you need to do is install the addon and start writing stylish code.
 ### Customization
 
 If `ember-suave` isn't suave enough for you and you'd like to override
-certain rules, simply provide your own `.jscsrc` file at the root of
-your Ember CLI project. Those rules will be merged with the ones in the
-default config.
+certain rules, simply add your own rules to `.jscsrc` at the root of
+your Ember CLI project. Those rules will take precedence over the ones in the
+default preset.
 
 You can specify any of the [rules](http://jscs.info/rules.html) that are
-built into JSCS, or even provide your own custom ones.
+built into JSCS, provide your own custom ones, or even override the ones we
+have enabled by default.
 
 To disable a rule, set its value to `null`.
 
 ```json
 // .jscsrc
 {
-  "additionalRules": ["lib/rules/*.js"],
+  "preset": "ember-suave",
+  "additionalRules": ["./lib/rules/*.js"],
   "myAwesomeCustomRule": true,
   "disallowDanglingUnderscores": true,
   "disallowEmptyBlocks": null

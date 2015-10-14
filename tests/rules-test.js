@@ -7,11 +7,12 @@ var suaveLintTree = require('../index').lintTree;
 
 describe('rules tests', function() {
   var fixturePath = path.join(__dirname, 'fixtures');
+  var jscsrcPath = path.join(fixturePath, '.jscsrc');
   var builder, originLog;
 
   beforeEach(function() {
     this.lintTree = suaveLintTree;
-    this.app = { options: {} };
+    this.app = { options: { jscsOptions: { configPath: jscsrcPath } } };
 
     originLog = console.log;
     console.log = function(contents) {

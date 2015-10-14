@@ -3,10 +3,28 @@ var path = require('path');
 var temp = require('temp');
 var expect = require('chai').expect;
 var jscsrcBuilder = require('../lib/jscsrc-builder');
+var resetMessageLoggedStatus = jscsrcBuilder.resetMessageLoggedStatus;
 
 var root = process.cwd();
 
 describe('jscsrc-builder', function() {
+  function MockProject() {
+    this.root = 'fake/project/root';
+    var messages = this.messages = [];
+    this.ui = {
+      writeLine: function(message) {
+        messages.push(message);
+      }
+    };
+  }
+
+  beforeEach(function() {
+    var dir = temp.mkdirSync();
+
+    process.chdir(dir);
+    resetMessageLoggedStatus();
+  });
+
   afterEach(function() {
     process.chdir(root);
   });
@@ -18,13 +36,11 @@ describe('jscsrc-builder', function() {
   }
 
   function testCustomConfig(config) {
-    var dir = temp.mkdirSync();
+    var dir = process.cwd();
     var jscsrcPath = path.join(dir, '.jscsrc');
     var jscsrcContents = JSON.stringify(config);
 
     fs.writeFileSync(jscsrcPath, jscsrcContents, { encoding: 'utf8' });
-
-    process.chdir(dir);
   }
 
   it('returns a path to a valid file', function() {
@@ -115,5 +131,20 @@ describe('jscsrc-builder', function() {
     var config = readConfig(configPath);
 
     expect('esnext' in config).to.equal(false);
+  });
+
+  it('prints a deprecation warning when ran without a `.jscsrc` in the project root', function() {
+    var project = new MockProject();
+    jscsrcBuilder(project);
+
+    expect(project.messages).to.include('Your project does not include a `.jscsrc` file. Please generate one via `ember generate ember-suave`.');
+  });
+
+  it('prints a deprecation warning when `.jscsrc` does not include `"preset": "ember-suave"`', function() {
+    var project = new MockProject();
+    testCustomConfig({});
+    jscsrcBuilder(project);
+
+    expect(project.messages).to.include('Your project\'s `.jscsrc` file does not include `ember-suave` as its preset. Please add `"preset": "ember-suave"` to your `.jscsrc` file.');
   });
 });
