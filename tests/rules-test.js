@@ -8,23 +8,15 @@ var suaveLintTree = require('../index').lintTree;
 describe('rules tests', function() {
   var fixturePath = path.join(__dirname, 'fixtures');
   var jscsrcPath = path.join(fixturePath, '.jscsrc');
-  var builder, originLog;
+  var builder;
 
   beforeEach(function() {
     this.lintTree = suaveLintTree;
     this.app = { options: { jscsOptions: { configPath: jscsrcPath } } };
-
-    originLog = console.log;
-    console.log = function(contents) {
-      if (!/at .+ :/.test(contents)) {
-        originLog.apply(console, arguments);
-      }
-    };
+    this.ui = { writeLine: function() {} };
   });
 
   afterEach(function() {
-    console.log = originLog;
-
     if (builder) {
       return builder.cleanup();
     }
