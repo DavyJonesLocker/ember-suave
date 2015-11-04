@@ -6,6 +6,7 @@
     "./rules/*.js"
   ],
 
+  "disallowConstOutsideModuleScope": true,
   "disallowEmptyBlocks": true,
   "disallowKeywordsOnNewLine": ["else"],
   "disallowMultipleLineBreaks": true,
