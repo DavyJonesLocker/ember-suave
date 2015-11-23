@@ -2,9 +2,27 @@
   "esnext": true,
   "verbose": true,
 
+  "plugins": [
+    "jscs-ember-deprecations"
+  ],
+
   "additionalRules": [
     "./rules/*.js"
   ],
+
+  "disallowObjectController": true,
+  "disallowInstanceInInitializer": true,
+  "disallowCoreView": true,
+  "disallowEmberTryCatch": true,
+  "disallowEmberRequired": true,
+  "disallowAtEachLeafNode": true,
+  "disallowArrayComputed": true,
+  "disallowReduceComputed": true,
+  "disallowEmberCreate": true,
+  "disallowEmberKeys": true,
+  "disallowEmberOneway": true,
+  "disallowEmberView": true,
+  "disallowPrototypeExtension": true,
 
   "disallowConstOutsideModuleScope": true,
   "disallowEmptyBlocks": true,
