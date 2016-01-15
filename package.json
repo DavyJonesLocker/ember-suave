@@ -24,10 +24,10 @@
     "broccoli": "0.16.5",
     "broccoli-asset-rev": "^2.1.1",
     "chai": "^2.2.0",
-    "ember-cli": "1.13.7",
+    "ember-cli": "1.13.14",
     "ember-cli-blueprint-test-helpers": "^0.3.0",
     "ember-cli-internal-test-helpers": "^0.4.0",
-    "ember-cli-release": "0.2.5",
+    "ember-cli-release": "0.2.8",
     "jscs": "^2.6.0",
     "mocha": "^2.2.4",
     "mocha-jshint": "^2.1.1",
@@ -40,7 +40,7 @@
   ],
   "dependencies": {
     "broccoli-jscs": "^1.0.0",
-    "ember-cli-babel": "^5.0.0",
+    "ember-cli-babel": "^5.1.5",
     "jscs-ember-deprecations": "0.0.22",
     "temp": "0.8.3"
   },
