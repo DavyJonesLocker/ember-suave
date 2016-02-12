@@ -1,14 +1,13 @@
 # Ember Suave
 
-[![Build Status](https://travis-ci.org/dockyard/ember-suave.svg?branch=master)](https://travis-ci.org/dockyard/ember-suave)
+[![Build Status](https://travis-ci.org/DockYard/ember-suave.svg?branch=master)](https://travis-ci.org/DockYard/ember-suave)
 
-Ensures super stylish code by enforcing the DockYard JavaScript and
-Ember style guide rules.
-
-![suave](http://i.imgur.com/zM1X686.gif)
+Ensures super stylish code by enforcing the DockYard JavaScript and Ember style guide rules.
 
 * [JavaScript Style Guide](https://github.com/dockyard/styleguides/blob/master/engineering/javascript.md)
 * [Ember Style Guide](https://github.com/dockyard/styleguides/blob/master/engineering/ember.md)
+
+![suave](http://i.imgur.com/zM1X686.gif)
 
 ## Installation
 
@@ -16,20 +15,21 @@ Ember style guide rules.
 ember install ember-suave
 ```
 
-## Usage
+Post installation, you will find a `.jscsrc` file at the root of your project, with the following content:
 
-`ember-suave` is used as a JSCS preset, and can be enabled by adding a `preset` to your `.jscsrc` file.
-
-```
+```json
 {
   "preset": "ember-suave"
 }
 ```
 
-`ember-suave` integrates well with ember-cli, but can also be used as a standalone JSCS preset. This allows custom
-editor integration, and non-ember-cli projects to utilize our curated set of rules.
+This sets `ember-suave` as the default [JSCS](http://jscs.info/) preset.
 
-When used from within ember-cli, your test suite will automatically fail if any of the rules are broken.
+## Usage
+
+`ember-suave` integrates well with `ember-cli`, but can also be used as a standalone JSCS preset. This allows custom editor integration, and non-Ember CLI projects to utilize our curated set of rules.
+
+When used from within `ember-cli`, your test suite will automatically fail if any of the rules are broken.
 
 ## JSCS Rules
 
@@ -49,10 +49,9 @@ You can specify any of the [rules](http://jscs.info/rules.html) that are
 built into JSCS, provide your own custom ones, or even override the ones we
 have enabled by default.
 
-To disable a rule, set its value to `null`.
+To disable a rule, set its value to `null` or `false`.
 
 ```json
-// .jscsrc
 {
   "preset": "ember-suave",
   "additionalRules": ["./lib/rules/*.js"],
@@ -73,11 +72,13 @@ To disable a rule, set its value to `null`.
 
 ## Versioning
 
-This library follows [Semantic Versioning](http://semver.org).
+Bug fixes will be released as minor or patch version bumps. In some limited cases, a bugfix might cause a previously ignored file or section to be parsed and trigger a failed test, but this is fairly unlikely.
+
+Changing the preset in any way that causes previously passing tests to fail would require a major version bump. This will lead to a larger number of major version releases than a typical project, but provides consumers with relative safety in the use of `^X.Y.Z` style version ranges.
 
 ## Legal
 
-[DockYard](http://dockyard.com/ember-consulting), Inc &copy; 2015
+[DockYard](http://dockyard.com/ember-consulting), Inc &copy; 2016
 
 [@dockyard](http://twitter.com/dockyard)
 
