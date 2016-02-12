@@ -107,6 +107,7 @@
   "requireSpacesInConditionalExpression": true,
   "requireSpacesInForStatement": true,
   "requireSpacesInsideObjectBrackets": "all",
+  "requireSpread": true,
   "requireTemplateStringsForConcatenation": true,
   "validateIndentation": 2,
   "validateParameterSeparator": ", ",
