@@ -9,6 +9,8 @@ module.exports = {
   lintTree: function(type, tree) {
     var ui = this.ui;
     var jscsOptions = this.app.options.jscsOptions || {};
+    jscsOptions.configPath = jscsOptions.configPath || '.jscsrc';
+
     var jscsFilter = new JSCSFilter(tree, jscsOptions);
 
     jscsFilter.logError = function(errorText) {
