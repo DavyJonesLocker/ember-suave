@@ -104,6 +104,10 @@
   "requireSpacesInFunction": {
     "beforeOpeningCurlyBrace": true
   },
+  "requireSpacesInGenerator": {
+    "beforeStar": true,
+    "afterStar": true
+  },
   "requireSpacesInConditionalExpression": true,
   "requireSpacesInForStatement": true,
   "requireSpacesInsideObjectBrackets": "all",
