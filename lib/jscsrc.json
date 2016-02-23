@@ -12,6 +12,7 @@
   "disallowCoreView": true,
   "disallowEmberTryCatch": true,
   "disallowEmberRequired": true,
+  "disallowDirectPropertyAccess": ["Ember", "DS"],
   "disallowAtEachLeafNode": true,
   "disallowArrayComputed": true,
   "disallowReduceComputed": true,
