@@ -1,0 +1,1 @@
+const { isNone } = Ember;

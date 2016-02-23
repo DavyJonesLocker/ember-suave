@@ -57,6 +57,7 @@
   "requireCapitalizedConstructors": true,
   "requireCommaBeforeLineBreak": true,
   "requireCommentsToIncludeAccess": true,
+  "requireConstForEmberProperties": true,
   "requireCurlyBraces": [
     "if",
     "else",
