@@ -14,6 +14,7 @@ describe('rules tests', function() {
     this.lintTree = suaveLintTree;
     this.app = { options: { jscsOptions: { configPath: jscsrcPath } } };
     this.ui = { writeLine: function() {} };
+    this.project = {};
   });
 
   afterEach(function() {
