@@ -1,3 +1,8 @@
 {
-  "preset": "ember-suave"
+  "preset": "ember-suave",
+  "excludeFiles": [
+    "**",
+    "!app/**/*.js",
+    "!tests/**/*.js"
+  ]
 }
