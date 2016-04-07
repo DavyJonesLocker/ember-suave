@@ -23,7 +23,7 @@
   "devDependencies": {
     "broccoli": "0.16.9",
     "broccoli-asset-rev": "^2.4.2",
-    "chai": "^2.2.0",
+    "chai": "^3.5.0",
     "ember-cli": "1.13.15",
     "ember-cli-blueprint-test-helpers": "^0.8.0",
     "ember-cli-internal-test-helpers": "^0.8.1",
