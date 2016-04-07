@@ -1,17 +1,25 @@
 'use strict';
 
-var setupTestHooks     = require('ember-cli-blueprint-test-helpers/lib/helpers/setup');
-var BlueprintHelpers   = require('ember-cli-blueprint-test-helpers/lib/helpers/blueprint-helper');
-var generateAndDestroy = BlueprintHelpers.generateAndDestroy;
+var blueprintHelpers = require('ember-cli-blueprint-test-helpers/helpers');
+var setupTestHooks = blueprintHelpers.setupTestHooks;
+var emberNew = blueprintHelpers.emberNew;
+var emberGenerate = blueprintHelpers.emberGenerate;
+
+var chai = require('ember-cli-blueprint-test-helpers/chai');
+var expect = chai.expect;
+var file = chai.file;
 
 describe('Acceptance: ember generate and destroy ember-suave', function() {
   setupTestHooks(this);
 
   it('ember-suave', function() {
-    return generateAndDestroy(['ember-suave'], {
-      files: [
-        { file: '.jscsrc', contents: ['"preset": "ember-suave"'] }
-      ]
-    });
+    var args = ['ember-suave'];
+
+    return emberNew()
+      .then(() => emberGenerate(args))
+      .then(() => {
+        expect(file('.jscsrc'))
+          .to.contain('"preset": "ember-suave"');
+      });
   });
 });
