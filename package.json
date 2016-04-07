@@ -25,7 +25,7 @@
     "broccoli-asset-rev": "^2.4.2",
     "chai": "^3.5.0",
     "ember-cli": "2.4.3",
-    "ember-cli-blueprint-test-helpers": "^0.8.0",
+    "ember-cli-blueprint-test-helpers": "^0.11.0",
     "ember-cli-internal-test-helpers": "^0.8.1",
     "ember-cli-release": "1.0.0-beta.1",
     "jscs": "^2.9.0",
