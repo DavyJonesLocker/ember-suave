@@ -1,7 +1,4 @@
 {
-  "esnext": true,
-  "verbose": true,
-
   "plugins": [
     "jscs-ember-deprecations"
   ],

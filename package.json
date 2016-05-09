@@ -28,7 +28,7 @@
     "ember-cli-blueprint-test-helpers": "^0.11.0",
     "ember-cli-internal-test-helpers": "^0.8.1",
     "ember-cli-release": "1.0.0-beta.1",
-    "jscs": "^2.9.0",
+    "jscs": "^3.0.3",
     "mocha": "^2.4.5",
     "mocha-jshint": "^2.1.1",
     "walk-sync": "^0.2.6"
