@@ -3,7 +3,7 @@
 var walkSync = require('walk-sync');
 var execFile = require("child_process").execFile;
 
-var nodeTestFiles = walkSync('.')
+var nodeTestFiles = walkSync('.', { globs: ['{lib,blueprints,tests}/**/*.js'] })
   .filter(function(file) {
     return /.js$/.test(file);
   })
