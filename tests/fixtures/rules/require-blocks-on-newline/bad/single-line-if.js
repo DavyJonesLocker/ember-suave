@@ -1,1 +1,1 @@
-if (true) { doSomething(); }
+if (true) {doSomething();}

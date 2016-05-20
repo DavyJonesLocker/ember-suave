@@ -112,5 +112,6 @@
   "validateQuoteMarks": {
     "mark": "'",
     "escape": true
-  }
+  },
+  "maxErrors": null
 }

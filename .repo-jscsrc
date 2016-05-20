@@ -1,5 +1,4 @@
 {
-  "esnext": true,
   "disallowSpacesInsideArrayBrackets": "all",
   "requireSpaceBeforeObjectValues": true,
   "requireCommaBeforeLineBreak": true,
