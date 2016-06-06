@@ -1,4 +1,4 @@
-let Blah = Ember.Object.extend({
+let Blah = Foo.extend({
   init() {
     this._super(...arguments); // normal usage
 
