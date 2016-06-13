@@ -24,7 +24,6 @@
     "broccoli": "0.16.9",
     "broccoli-asset-rev": "^2.4.2",
     "chai": "^3.5.0",
-    "cst": "^0.3.0",
     "ember-cli": "2.4.3",
     "ember-cli-blueprint-test-helpers": "^0.11.0",
     "ember-cli-internal-test-helpers": "^0.8.1",
@@ -41,6 +40,7 @@
   ],
   "dependencies": {
     "broccoli-jscs": "^2.0.0",
+    "cst": "^0.3.0",
     "ember-cli-babel": "^5.1.6",
     "js-string-escape": "^1.0.0",
     "jscs": "^3.0.4",
