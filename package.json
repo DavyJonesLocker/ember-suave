@@ -28,7 +28,6 @@
     "ember-cli-blueprint-test-helpers": "^0.11.0",
     "ember-cli-internal-test-helpers": "^0.8.1",
     "ember-cli-release": "1.0.0-beta.1",
-    "jscs": "^3.0.4",
     "mocha": "^2.4.5",
     "mocha-jshint": "^2.1.1",
     "walk-sync": "^0.2.6"
@@ -40,11 +39,10 @@
   ],
   "dependencies": {
     "broccoli-jscs": "^2.0.0",
-    "cst": "^0.3.0",
     "ember-cli-babel": "^5.1.6",
     "js-string-escape": "^1.0.0",
     "jscs": "^3.0.4",
-    "jscs-ember-deprecations": "martndemus/jscs-ember-deprecations#ae206b8",
+    "jscs-ember-deprecations": "brzpegasus/jscs-ember-deprecations#5749615",
     "temp": "0.8.3"
   },
   "ember-addon": {
