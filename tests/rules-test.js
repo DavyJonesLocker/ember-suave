@@ -12,7 +12,14 @@ describe('rules tests', function() {
 
   beforeEach(function() {
     this.lintTree = suaveLintTree;
-    this.app = { options: { jscsOptions: { configPath: jscsrcPath } } };
+    this.app = {
+      options: {
+        jscsOptions: {
+          configPath: jscsrcPath,
+          persist: false
+        }
+      }
+    };
     this.ui = { writeLine: function() {} };
     this.project = {};
   });
