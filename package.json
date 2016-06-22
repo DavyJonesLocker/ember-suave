@@ -41,7 +41,7 @@
     "broccoli-jscs": "^2.0.0",
     "ember-cli-babel": "^5.1.6",
     "js-string-escape": "^1.0.0",
-    "jscs": "^3.0.4",
+    "jscs": "3.0.4",
     "jscs-ember-deprecations": "brzpegasus/jscs-ember-deprecations#5749615",
     "temp": "0.8.3"
   },
