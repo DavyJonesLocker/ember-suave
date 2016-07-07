@@ -1,7 +1,12 @@
-/* globals jQuery, QUnit */
+/* globals requirejs, jQuery, QUnit */
 
 jQuery(document).ready(function () {
-  var TestLoaderModule = require('ember-cli/test-loader');
+  var testLoaderModulePath = 'ember-cli-test-loader/test-support/index';
+  if (!requirejs.entries[testLoaderModulePath]) {
+    testLoaderModulePath = 'ember-cli/test-loader';
+  }
+
+  var TestLoaderModule = require(testLoaderModulePath);
   var addModuleExcludeMatcher = TestLoaderModule['addModuleExcludeMatcher'];
 
   function isJscsDisabled() { return typeof QUnit === 'undefined' ? false : QUnit.urlParams.nojscs; }
