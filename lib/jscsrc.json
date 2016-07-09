@@ -46,6 +46,9 @@
   "disallowSpacesInFunction": {
     "beforeOpeningRoundBrace": true
   },
+  "disallowSpacesInGenerator": {
+    "beforeStar": true
+  },
   "disallowSpacesInsideParentheses": true,
   "disallowSpacesInCallExpression": true,
   "disallowTrailingComma": true,
