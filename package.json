@@ -42,7 +42,7 @@
     "ember-cli-babel": "^5.1.6",
     "js-string-escape": "^1.0.0",
     "jscs": "^3.0.4",
-    "jscs-ember-deprecations": "brzpegasus/jscs-ember-deprecations#5749615",
+    "jscs-ember-deprecations": "^2.3.0",
     "temp": "0.8.3"
   },
   "ember-addon": {
