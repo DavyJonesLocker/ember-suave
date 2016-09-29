@@ -9,7 +9,11 @@ Ensures super stylish code by enforcing the DockYard JavaScript and Ember style 
 
 ![suave](http://i.imgur.com/zM1X686.gif)
 
-## Installation
+### ESLint Installation and Usage
+
+If you are using [ember-cli-eslint](https://github.com/ember-cli/ember-cli-eslint) in your project, and you would like to also make use of all the ember-suave rules, we have great news! We have created [eslint-plugin-ember-suave](https://github.com/DockYard/eslint-plugin-ember-suave), which allows you to extend the recommended suave rules, right in your `.eslintrc.js`. Further instructions on usage and configuration can be found on the [eslint-plugin-ember-suave](https://github.com/DockYard/eslint-plugin-ember-suave) repo.
+
+## JSCS Installation
 
 ```bash
 ember install ember-suave
@@ -25,7 +29,7 @@ Post installation, you will find a `.jscsrc` file at the root of your project, w
 
 This sets `ember-suave` as the default [JSCS](http://jscs.info/) preset.
 
-## Usage
+## JSCS Usage
 
 `ember-suave` integrates well with `ember-cli`, but can also be used as a standalone JSCS preset. This allows custom editor integration, and non-Ember CLI projects to utilize our curated set of rules.
 
