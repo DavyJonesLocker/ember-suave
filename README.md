@@ -1,6 +1,6 @@
-# Ember Suave
+# Ember Suave [![Build Status](https://travis-ci.org/DockYard/ember-suave.svg?branch=master)](https://travis-ci.org/DockYard/ember-suave)
 
-[![Build Status](https://travis-ci.org/DockYard/ember-suave.svg?branch=master)](https://travis-ci.org/DockYard/ember-suave)
+**[ember-suave is built and maintained by DockYard, contact us for expert Ember.js consulting](https://dockyard.com/ember-consulting)**.
 
 Ensures super stylish code by enforcing the DockYard JavaScript and Ember style guide rules.
 
