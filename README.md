@@ -1,6 +1,7 @@
 # Ember Suave [![Build Status](https://travis-ci.org/DockYard/ember-suave.svg?branch=master)](https://travis-ci.org/DockYard/ember-suave)
 
-**[ember-suave is built and maintained by DockYard, contact us for expert Ember.js consulting](https://dockyard.com/ember-consulting)**.
+**This library is based on JSCS linting rules and is no longer maintained. For
+the ESLint equivalent, see [eslint-plugin-ember-suave](https://github.com/DockYard/eslint-plugin-ember-suave).**
 
 Ensures super stylish code by enforcing the DockYard JavaScript and Ember style guide rules.
 
